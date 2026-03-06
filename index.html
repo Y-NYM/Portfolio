@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bexruz Saidganiyev - Frontend Developer & PDP Mock Supervisor Portfolio">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1319" media="(prefers-color-scheme: dark)">
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav" aria-label="Main navigation">
+        <div class="logo">Bexruz Saidganiyev</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-switcher">
+            <label class="visually-hidden" for="theme-select-desktop">Theme mode</label>
+            <select id="theme-select-desktop" class="theme-select" data-theme-select aria-label="Theme mode">
+                <option value="auto">Auto</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav" aria-label="Mobile navigation">
+        <div class="logo">Bexruz Saidganiyev</div>
+        <div class="hamburger-menu">
+            <button class="hamburger-icon" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="mobile-menu" class="menu-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="theme-switcher-item">
+                    <label class="visually-hidden" for="theme-select-mobile">Theme mode</label>
+                    <select id="theme-select-mobile" class="theme-select" data-theme-select aria-label="Theme mode">
+                        <option value="auto">Auto</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile-pic" src="./assets/profile-pic.webp" alt="Bexruz Saidganiyev profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Bexruz Saidganiyev</h1>
+            <p class="section__text__p2">Frontend Developer &amp; PDP Mock Supervisor</p>
+            <div class="btn-container">
+                <a class="btn btn-color-2" href="./assets/Bekhruz_Saidganiyev_CV.docx" target="_blank" rel="noopener">Download CV</a>
+                <a class="btn btn-color-1" href="#contact">Contact Info</a>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.instagram.com/bekkhruwww?igsh=MXA0ejhpcWYwOGh4cQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Open Instagram profile">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-svg-download-png-433323.png?f=webp&w=512" alt="Instagram profile" class="icon">
+                </a>
+                <a href="https://t.me/Bekkhruzs" target="_blank" rel="noopener" aria-label="Open Telegram profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111710.png" alt="Telegram profile" class="icon">
+                </a>
+                <a href="https://github.com/Y-NYM" target="_blank" rel="noopener" aria-label="Open GitHub profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub profile" class="icon">
+                </a>
+                <a href="https://wa.me/998995457070" target="_blank" rel="noopener" aria-label="Open WhatsApp chat">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-icon.png" alt="WhatsApp profile" class="icon">
+                </a>
+                <a href="https://www.tiktok.com/@ya_nyam?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="Open TikTok profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX1Zt4Tmass3_gXAFmFCrsES7uuemtEzEAIQ&s" class="icon" alt="TikTok profile">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img class="about-pic" src="./assets/all other/about-me-picture.webp" alt="About me picture" loading="lazy">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img class="icon" src="./assets/experience.webp" alt="Experience icon" loading="lazy">
+                        <h3>Experience</h3>
+                        <p>Junior<br>Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img class="icon" src="./assets/education-pic.webp" alt="Education icon" loading="lazy">
+                        <h3>Education</h3>
+                        <p>PDP School<br>9th Grade Graduate</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm a Frontend Developer and Mock Supervisor at PDP School, where I also work as a Speaking Examiner during IELTS mock exams. Currently an IELTS student myself, I'm passionate about communication, design, and self-growth through every project I take on.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#experience" aria-label="Go to experience section">
+            <img class="icon arrow" src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" alt="Scroll down arrow" loading="lazy">
+        </a>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img class="icon" src="./assets/checkmark.webp" alt="Experienced icon" loading="lazy">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="icon" src="./assets/checkmark.webp" alt="Experienced icon" loading="lazy">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="icon" src="./assets/checkmark.webp" alt="Experienced icon" loading="lazy">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">IELTS &amp; Language Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.webp" alt="Experienced icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>IELTS 7.0</h3>
+                                <p>In progress</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.webp" alt="Experienced icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Debates</h3>
+                                <p>Participated</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.webp" alt="Experienced icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Public Speeches</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.webp" alt="Experienced icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Speaking Examiner</h3>
+                                <p>Achieved</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img class="icon" src="./assets/checkmark.webp" alt="Experienced icon" loading="lazy">
+                            <div>
+                                <h3>Exchange Programs</h3>
+                                <p>Participated</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#projects" aria-label="Go to projects section">
+            <img class="icon arrow" src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" alt="Scroll down arrow" loading="lazy">
+        </a>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Take a Look at My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img class="achievement-img project-site-thumb" src="https://image.thum.io/get/width/1200/crop/700/noanimate/https://pokemonappprjecty-nym.vercel.app" alt="Pokemon App website thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="experience-sub-title achievement-title">Pokemon App</h2>
+                        <div class="btn-container">
+                            <a class="btn btn-color-1 achievement-btn" href="https://pokemonappprjecty-nym.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                            <a class="btn btn-color-2 achievement-btn" href="https://github.com/Y-NYM/pokemon.app.prject.y-nym" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img class="achievement-img project-site-thumb" src="https://image.thum.io/get/width/1200/crop/700/noanimate/https://github.com/Y-NYM/Portfolio" alt="Portfolio repository page thumbnail" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="experience-sub-title achievement-title">Portfolio Repository</h2>
+                        <div class="btn-container">
+                            <a class="btn btn-color-2 achievement-btn" href="https://github.com/Y-NYM/Portfolio" target="_blank" rel="noopener">View on GitHub</a>
+                            <a class="btn btn-color-2 achievement-btn" href="https://github.com/Y-NYM" target="_blank" rel="noopener">More Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#achievements" aria-label="Go to achievements section">
+            <img class="icon arrow" src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" alt="Scroll down arrow" loading="lazy">
+        </a>
+    </section>
+
+    <section id="achievements">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Achievements</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img class="achievement-img" src="./assets/event1/achiv4.webp" alt="Feminism presentation" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="experience-sub-title achievement-title">PPT about "Feminism"</h2>
+                        <div class="btn-container">
+                            <a class="btn btn-color-2 achievement-btn" href="./assets/event1/achivement-video.webm" target="_blank" rel="noopener">Watch Video</a>
+                            <button class="btn btn-color-2 achievement-btn" type="button" data-open-gallery="galleryModal">More Photos</button>
+                        </div>
+                        <div id="galleryModal" class="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-1-title" hidden>
+                            <div class="gallery-content">
+                                <button type="button" class="gallery-close" data-close-gallery aria-label="Close gallery">&times;</button>
+                                <h3 id="gallery-modal-1-title" class="visually-hidden">Feminism presentation gallery</h3>
+                                <img src="./assets/event1/achivements.webp" alt="Achievement photo 1" loading="lazy">
+                                <img src="./assets/event1/achiv 2.webp" alt="Achievement photo 2" loading="lazy">
+                                <img src="./assets/event1/achiv3.webp" alt="Achievement photo 3" loading="lazy">
+                                <img src="./assets/event1/achiv6.webp" alt="Achievement photo 4" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img class="achievement-img" src="./assets/event2/image1.webp" alt="FLEX program seminar" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="experience-sub-title achievement-title">Seminar About FLEX Program</h2>
+                        <div class="btn-container">
+                            <a class="btn btn-color-2 achievement-btn" href="./assets/event2/event2.webm" target="_blank" rel="noopener">Watch Video</a>
+                            <button class="btn btn-color-2 achievement-btn" type="button" data-open-gallery="galleryModal2">More Photos</button>
+                        </div>
+                        <div id="galleryModal2" class="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-2-title" hidden>
+                            <div class="gallery-content">
+                                <button type="button" class="gallery-close" data-close-gallery aria-label="Close gallery">&times;</button>
+                                <h3 id="gallery-modal-2-title" class="visually-hidden">FLEX seminar gallery</h3>
+                                <img src="./assets/event2/image3.webp" alt="Event photo 1" loading="lazy">
+                                <img src="./assets/event2/image2.webp" alt="Event photo 2" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img class="achievement-img" src="./assets/event3/img3.webp" alt="Portfolio project" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="experience-sub-title achievement-title">Presentation of Portfolio at PDP Ecosystem</h2>
+                        <div class="btn-container">
+                            <a class="btn btn-color-2 achievement-btn" href="https://www.instagram.com/reel/DQmN5T7DHnE/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">Watch Video</a>
+                            <button class="btn btn-color-2 achievement-btn" type="button" data-open-gallery="galleryModal3">More Photos</button>
+                        </div>
+                        <div id="galleryModal3" class="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-3-title" hidden>
+                            <div class="gallery-content">
+                                <button type="button" class="gallery-close" data-close-gallery aria-label="Close gallery">&times;</button>
+                                <h3 id="gallery-modal-3-title" class="visually-hidden">Portfolio presentation gallery</h3>
+                                <img src="./assets/event3/img1.webp" alt="Presentation photo 1" loading="lazy">
+                                <img src="./assets/event3/img2.webp" alt="Presentation photo 2" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img class="achievement-img" src="./assets/event4/Conversation club logo.webp" alt="Conversation Club directory" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="experience-sub-title achievement-title">Founder of Free Conversation Club</h2>
+                        <div class="btn-container">
+                            <a class="btn btn-color-2 achievement-btn" href="./assets/conversation-club/" target="_blank" rel="noopener">Watch Video</a>
+                            <button class="btn btn-color-2 achievement-btn" type="button" data-open-gallery="galleryModal4">More Photos</button>
+                        </div>
+                        <div id="galleryModal4" class="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-4-title" hidden>
+                            <div class="gallery-content">
+                                <button type="button" class="gallery-close" data-close-gallery aria-label="Close gallery">&times;</button>
+                                <h3 id="gallery-modal-4-title" class="visually-hidden">Conversation Club gallery</h3>
+                                <img src="./assets/conversation-club/photo-1.webp" alt="Conversation Club photo 1" loading="lazy">
+                                <img src="./assets/conversation-club/photo-2.webp" alt="Conversation Club photo 2" loading="lazy">
+                                <img src="./assets/conversation-club/photo-3.webp" alt="Conversation Club photo 3" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#contact" aria-label="Go to contact section">
+            <img class="icon arrow" src="https://tangerine-hummingbird-1479b6.netlify.app/assets/arrow.png" alt="Scroll down arrow" loading="lazy">
+        </a>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email icon" class="icon contact-icon email-icon" loading="lazy">
+                <p><a href="mailto:behruzsaidganiyev95@gmail.com">behruzsaidganiyev95@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111710.png" alt="Telegram icon" class="icon contact-icon" loading="lazy">
+                <p><a href="https://t.me/Y_NYM" target="_blank" rel="noopener">Telegram</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-icon.png" alt="WhatsApp icon" class="icon contact-icon" loading="lazy">
+                <p><a href="https://wa.me/998995457070" target="_blank" rel="noopener">WhatsApp</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav aria-label="Footer navigation">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025-2026 Bexruz Saidganiyev. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
